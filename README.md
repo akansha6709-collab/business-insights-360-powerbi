@@ -1,4 +1,5 @@
-Business Insights 360 – Power BI + SQL + Python
+business-insights-360-powerbi-sql
+
 
 An end-to-end analytics solution covering Finance, Sales, Marketing, Supply Chain, and Executive KPIs using Power BI, SQL, and Python.
 
@@ -112,4 +113,5 @@ Executive-level KPIs with trend analysis
 Akansha Singh
 📌 Power BI • SQL • Python
 🔗 LinkedIn: 
+
 
