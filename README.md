@@ -1,22 +1,21 @@
-business-insights-360-powerbi-sql
+Business Insights 360 – Power BI + SQL
 
+An end-to-end business analytics solution covering Finance, Sales, Marketing, Supply Chain, and Executive KPIs using Power BI and SQL.
 
-An end-to-end analytics solution covering Finance, Sales, Marketing, Supply Chain, and Executive KPIs using Power BI, SQL, and Python.
+This project simulates a full enterprise BI system using a clean star-schema data model, robust SQL scripts, and advanced DAX measures to deliver actionable insights across multiple business functions.
 
-This project simulates a full enterprise BI system with multiple business views and real-world KPIs, built using a star-schema data model and advanced DAX measures.
+📊 Dashboards Included
+1. Finance View
 
-📊 Key Dashboards Included
-Finance View
-
-P&L Statement
+Profit & Loss Statement
 
 Gross Margin Analysis
 
-Net Sales vs Benchmark / Target
+Net Sales vs Target
 
-Expense Breakdown
+Expense Insights
 
-Sales View
+2. Sales View
 
 Customer Performance
 
@@ -26,17 +25,17 @@ Scatter Performance Matrix
 
 Unit Economics
 
-Marketing View
+3. Marketing View
 
-Segment performance
+Segment Performance
 
-Market / Region / Customer metrics
+Region / Market Metrics
 
 Gross Margin %
 
 Net Profit %
 
-Supply Chain View
+4. Supply Chain View
 
 Forecast Accuracy
 
@@ -44,34 +43,40 @@ Net Error Trend
 
 Customer & Product Risk Profile
 
-Executive View
+5. Executive View
 
-Top KPIs for CXOs
+CXO KPIs
 
-Revenue trend (2018–2022)
+Revenue Trend (2018–2022)
 
 Market Share Analysis
 
-Top 5 Customers & Products
+Top Customers & Products
 
 🧰 Tech Stack
 Component	Tools Used
 Data Visualization	Power BI
-Data Cleaning	Python (Pandas)
-Data Storage	SQL
-Data Modeling	Star Schema, Fact & Dim Tables
+Data Storage + Querying	SQL
+Data Modeling	Star Schema, Fact & Dimension Tables
 Version Control	Git + Git LFS
 🗂 Folder Structure
 business-insights-360/
 │
-├── dashboard.pbix           # Main Power BI dashboard
-├── images/                  # Screenshots of dashboard views
-├── data/                    # Raw & processed datasets
-├── sql/                     # SQL scripts used for transformations
-├── python/                  # Python scripts for ETL
-└── README.md                # Project documentation
+├── dashboard.pbix                # Main Power BI dashboard (LFS)
+├── images/                       # Dashboard screenshots
+├── sql/                          # SQL scripts
+│     ├── 00_user_and_permissions.sql
+│     ├── 01_create_tables.sql
+│     ├── 02_load_data.sql
+│     ├── 03_business_queries.sql
+│     └── 04_validation_queries.sql
+│
+└── README.md
 
 🖼 Dashboard Snapshots
+
+(Add images inside /images folder)
+
 Finance View
 
 Sales View
@@ -82,36 +87,31 @@ Supply Chain View
 
 Executive View
 
-📥 Download & Run
+📥 How to Use
+Clone the repository
+git clone https://github.com/akansha6709-collab/business-insights-360-powerbi-sql.git
 
-Clone the repository:
+Open the Dashboard
 
-git clone https://github.com/akansha6709-collab/business-insights-360-powerbi.git
+Open dashboard.pbix in Power BI Desktop.
 
+Run SQL Scripts
 
-Power BI file is stored in LFS:
+Navigate to /sql folder
 
-dashboard.pbix
+Execute scripts in the following order:
 
+00_user_and_permissions.sql
 
-Open the PBIX file in Power BI Desktop.
+01_create_tables.sql
 
-📌 Insights Delivered
+02_load_data.sql
 
-Growth and profitability trends across years
+03_business_queries.sql
 
-Declining product segments and underperforming customers
-
-Forecast accuracy issues and supply chain risk
-
-Market share insights across competitors
-
-Executive-level KPIs with trend analysis
+04_validation_queries.sql
 
 👤 Author / Contact
 
 Akansha Singh
-📌 Power BI • SQL • Python
-🔗 LinkedIn: 
-
-
+Power BI • SQL
